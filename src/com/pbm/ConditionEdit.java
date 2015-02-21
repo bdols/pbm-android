@@ -24,8 +24,9 @@ public class ConditionEdit extends PBMUtil {
 		
 		logAnalyticsHit("com.pbm.ConditionEdit");
 
-		EditText condition = (EditText)findViewById(R.id.condition);
-		condition.setText(lmx.condition.equals("null") ? "" : lmx.condition);
+		// remove per Ryan
+//		EditText condition = (EditText)findViewById(R.id.condition);
+//		condition.setText(lmx.condition.equals("null") ? "" : lmx.condition);
 
 		inputMethodManager = (InputMethodManager) this.getSystemService(Context.INPUT_METHOD_SERVICE);
 		inputMethodManager.toggleSoftInput(inputMethodManager.SHOW_FORCED, 0);
